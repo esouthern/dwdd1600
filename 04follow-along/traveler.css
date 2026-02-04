@@ -1,0 +1,107 @@
+/* This is the start of my CSS */
+
+body {
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* This is header area */
+header {
+    background-color: #eaeaea;
+    padding: 1rem 2vw;
+    & span {
+        margin: 0;
+        color: #024873;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+}
+
+/* This is navigation CSS */
+
+nav {
+    background-color: #f2b705;
+    & ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    & li.active a {
+        background-color: #024873;
+        color: #f2b705;
+    }
+    & a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #024873;
+        font-weight: 700;
+        display: block;
+        padding: .8rem 2rem;
+        &:hover {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* This is main area */
+
+main {
+    padding: 1rem 2vw;
+    & h1 {
+       color: #b40412; 
+    }
+    & h2 {
+        color: #024873;
+        margin-bottom: .2rem;
+    }
+    & p {
+        color: #333;
+        margin: 0;
+    }
+    & ol {
+        padding: .5rem 30px;
+        background-color: #efefef;
+        list-style-type: lower-alpha;
+    }
+    & dl {
+        & dt {
+            color: #b40412;
+            font-weight: 700;
+        }
+        & dd {
+            color: #024873;
+            font-size: 0.9rem;
+            margin-left: 20px;
+        }
+    }
+    & ul {
+        list-style-type: circle;
+        & li {
+            line-height: 125%;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+    }
+    & address {
+        font-style: normal;
+        background-color: #f2b705;
+        padding: 0.5rem;
+        width: fit-content;
+        border: 3px solid #024873;
+        border-radius: 0.9rem;
+    }
+}
+
+/* This is footer area */
+
+footer {
+    background-color: #efefef;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
